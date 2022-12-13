@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.sapin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.b1{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    clip-path: polygon(50% 65%, 0% 100%, 100% 100%);
+}
+
+.b1:nth-of-type(1){
+    transform: translateY(285%);
+    height: calc(100px * 0.5);
+    width: calc(100px * 0.5);
+}
+.b1:nth-of-type(2){
+    transform: translateY(120%);
+    height: calc(100px * 0.75);
+    width: calc(100px * 0.75);
+}
+.b1:nth-of-type(3){
+     transform: translateY(20%);
+     height: calc(100px * 1);
+     width: calc(100px * 1);
+ }
+.b1:nth-of-type(4){
+    transform: translateY(-60%);
+    height: calc(100px * 1.25);
+    width: calc(100px * 1.25);
+}
+.b1:nth-of-type(5){
+    transform: translateY(-120%);
+    height: calc(100px * 1.5);
+    width: calc(100px * 1.5);
+}
+.tronc{
+    background-color: saddlebrown;
+    height: 30px;
+    width: 30px;
+    transform: translateY(-600%)
+}
+.etoile{
+    transform: translateY(380%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    height: calc(100px * 0.5);
+    width: calc(100px * 0.5);
+    background-color: yellow;
+}
+.deco {
+    position: absolute;
+    z-index: 20;
+    display: block;
+    clip-path: circle(50% at 50% 50%);
+    background-color: crimson;
+}
+.boule{
+    height: 13px;
+    width: 13px;
+    left: 60px;
+}
+.boule2{
+    height: 10px;
+    width: 10px;
+    top: 340px;
+    right: 60px;
+}
+.boule3{
+    height: 7px;
+    width: 7px;
+    bottom: 320px;
+    right: 60px;
+}
+.boule4{
+    height: 13px;
+    width: 13px;
+    top: 344px;
+    left: 50px;
+}
+#ciel {
+    background-color: #318DCE;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    height: 60%;
+}
+
+#sol {
+    background-color: white;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    height: 40%;
+    z-index: -10;
+}
